@@ -92,6 +92,6 @@ npm install
 
 ## Acknowledgements
 
-Special recognition to [Frontend Pro](https://frontendpro.com) for their resources and guidance, which greatly influenced this repository.
+Special recognition to [Frontend Pro](https://www.frontendpro.dev) for their resources and guidance, which greatly influenced this repository.
 
 ---
