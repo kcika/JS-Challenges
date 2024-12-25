@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1250px;
+    width: 100%;
+    padding: 10px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head p {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.head button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+    border: 1px solid #0b163f;
+    background-color: transparent;
+    transition: all .3s;
+    font-size: 20px;
+}
+
+.head button:hover {
+    background-color: #0b163f;
+    color: #fff;
+}
+
+.testimonialCont {
+    overflow: hidden;
+    width: 100%;
+}
+
+.testimonials {
+    display: flex;
+    gap: 50px;
+    padding: 40px 0;
+    transition: all .3s;
+}
+
+.testimonial {
+    flex: 0 0 33.33%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.testimonial1 {
+    background-color: #def4ed;
+    box-shadow: 6px 6px #5bb297;
+}
+
+.testimonial .icons i {
+    background-color: #22c55e;
+    padding: 5px;
+    margin-right: 5px;
+    color: #def4ed;
+    font-size: 12px;
+}
+
+.testimonial .heading {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.desc {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.writer {
+    display: flex;
+    align-items: center;
+}
+
+.writer p {
+    margin-left: 15px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.testimonial2 {
+    background-color: #fcdde1;
+    box-shadow: 6px 6px #fe6b7e;
+}
+
+.testimonial2 .icons i {
+    background-color: #fe6b7e;
+}
+
+.testimonial3 {
+    background-color: #ceddff;
+    box-shadow: 6px 6px #175cff;
+}
+
+.testimonial3 .icons i {
+    background-color: #175cff;
+}
+
+@media (min-width: 321px) and (max-width: 478px) {
+    .testimonial {
+        flex: 0 0 100%;
+    }
+
+    .testimonials {
+        gap: 15px;
+    }
+
+    .head p {
+        font-size: 20px;
+    }
+
+    .head button {
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+        margin: 0 5px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .testimonial {
+        flex: 0 0 50%;
+    }
+
+    .testimonials {
+        gap: 25px;
+    }
+
+    .head p {
+        font-size: 24px;
+    }
+
+    .head button {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
