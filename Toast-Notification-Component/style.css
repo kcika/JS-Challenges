@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    background-color: #f0f3fb;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 520px;
+    width: 100%;
+    height: auto;
+    padding: 35px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.btn {
+    width: 100%;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 25px 10px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .3s;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, .33);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btnSuccess {
+    background-color: #22c55e;
+}
+
+.btnInfo {
+    background-color: #3b82f6;
+}
+
+.btnWarning {
+    background-color: #f97316;
+}
+
+.btnError {
+    background-color: #ef4444;
+}
+
+.toastContainer {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    max-width: 440px;
+    width: 100%;
+    z-index: 999;
+}
+
+.toast {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 25px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    animation: fadeIn 0.5s, fadeOut 0.5s 4.5s;
+}
+
+.toast.success {
+    border-bottom: 5px solid #22c55e;
+}
+
+.toast.info {
+    border-bottom: 5px solid #3b82f6;
+}
+
+.toast.warning {
+    border-bottom: 5px solid #f97316;
+}
+
+.toast.error {
+    border-bottom: 5px solid #ef4444;
+}
+
+.toast i {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 25px;
+}
+
+.toast .fa-check {
+    background-color: #22c55e;
+}
+
+.toast .fa-circle-info {
+    background-color: #3b82f6;
+}
+
+.toast .fa-triangle-exclamation {
+    background-color: #f97316;
+}
+
+.toast .fa-exclamation {
+    background-color: #ef4444;
+}
+
+.toast .fa-xmark {
+    color: #555;
+    font-size: 20px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+@media (max-width: 478px) {
+    .btn {
+        font-size: 18px;
+    }
+
+    .toastContainer {
+        max-width: 90%;
+    }
+
+    .toast {
+        font-size: 18px;
+    }
+}
